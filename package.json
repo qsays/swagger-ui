@@ -45,7 +45,9 @@
     "security-audit:prod": "npm-audit-ci-wrapper -p -t low",
     "security-audit:all": "npm-audit-ci-wrapper -t moderate",
     "serve-static": "http-server dist/ -i -a 0.0.0.0 -p 3002",
-    "start": "npm-run-all --parallel serve-static open-static"
+    "start": "npm-run-all --parallel serve-static open-static",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@babel/runtime-corejs2": "^7.5.5",
@@ -83,7 +85,8 @@
     "swagger-client": "^3.10.0",
     "url-parse": "^1.4.7",
     "xml-but-prettier": "^1.0.1",
-    "zenscroll": "^4.0.2"
+    "zenscroll": "^4.0.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
@@ -164,5 +167,6 @@
       "maxSize": "1 MB",
       "compression": "none"
     }
-  ]
+  ],
+  "snyk": true
 }
