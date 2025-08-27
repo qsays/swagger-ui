@@ -79,7 +79,7 @@
     "remarkable": "^1.7.4",
     "reselect": "^2.5.4",
     "serialize-error": "^2.1.0",
-    "sha.js": "^2.4.11",
+    "sha.js": "^2.4.12",
     "swagger-client": "^3.10.0",
     "url-parse": "^1.4.7",
     "xml-but-prettier": "^1.0.1",
